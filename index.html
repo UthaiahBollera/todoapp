@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Todo App</title>
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+    <script defer type="module" src="./src/index.js" > </script>
+    <style>        
+        .header > button{
+            font-size: 14px;            
+        }
+        #todo-button{
+            background: #114e11;
+            color: white;
+        }  
+        #todo-text {
+            width: 140px;
+        }
+        ol{
+            list-style-type: none;
+            padding-left: 0;
+        }
+        .remove{
+            background:#af0e0e;
+            color: white;
+        }
+        .todo-list {
+            width: 200px;
+            margin: 10px 0 5px 0;
+        }
+        .todo-list > span.todo-completed {
+            text-decoration: line-through;
+        }
+        .todo-list>button{
+            float: right;
+        }
+        *{
+            font-family: 'Roboto';
+        }
+    </style>
+</head>
+<body>
+    <div id="todo-app"></div>    
+</body>
+</html>

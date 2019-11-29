@@ -5,7 +5,7 @@ import todoBody from './components/todo-body.js';
 import Footer from './components/footer.js';
 
 let store = createStore({}, todoReducer);
-
+window.store = store;
 let app = document.getElementById('todo-app');
 
 export default class App {
@@ -24,8 +24,7 @@ export default class App {
                 let { value } = document.querySelector('#todo-text');
                 value && store.dispatch({
                     type: 'ADD_TODO',
-                    data: {
-                        id: Math.random(100) * 10000,
+                    data: {                        
                         text: value,
                         completed: false
                     }

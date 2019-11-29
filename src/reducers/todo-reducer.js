@@ -7,7 +7,10 @@ let reducer = (state, action) => {
         case "INIT":
             return initialState;
         case "ADD_TODO":
-            state.todo.push(action.data);
+            state.todo.push({
+                id: Math.ceil(Math.random(100) * 10000),
+                ...action.data
+            });
             return state;
         case "REMOVE_TODO":
             return {
@@ -21,6 +24,10 @@ let reducer = (state, action) => {
                     }
                     return d;
                 })
+            }
+        case "TOGGLE_SORT_TODO":
+            return {
+
             }
         default:
             return state;

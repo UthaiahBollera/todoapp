@@ -1,6 +1,10 @@
 //REDUX
 function createStore(intialState = {}, reducer = () => {}) {
-    let state = intialState;
+    let allTodos = JSON.parse(localStorage.getItem('todo'));
+    let state = intialState ;
+    try{
+        state = allTodos || intialState;
+    }catch(e){}    
     let listeners = [];
 
     const dispatch = action => {
@@ -8,6 +12,7 @@ function createStore(intialState = {}, reducer = () => {}) {
       listeners.forEach(listener => {
         listener(state);
       });
+    localStorage.setItem('todo',state);
     };
     
     const getState = () => {

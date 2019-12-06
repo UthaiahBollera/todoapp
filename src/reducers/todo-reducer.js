@@ -5,7 +5,7 @@ let initialState = {
 let reducer = (state, action) => {
     switch (action.type) {
         case "INIT":
-            return state || initialState;
+            return Obiect.keys(state).length ? state : initialState;
         case "ADD_TODO":
             state.todo.push({
                 id: Math.ceil(Math.random(100) * 10000),

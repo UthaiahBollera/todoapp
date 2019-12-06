@@ -12,7 +12,7 @@ function createStore(intialState = {}, reducer = () => {}) {
       listeners.forEach(listener => {
         listener(state);
       });
-    localStorage.setItem('todo',state);
+    localStorage.setItem('todo',JSON.stringify(state));
     };
     
     const getState = () => {

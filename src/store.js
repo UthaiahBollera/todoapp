@@ -3,7 +3,7 @@ function createStore(intialState = {}, reducer = () => {}) {
     let allTodos = JSON.parse(localStorage.getItem('todo'));
     let state = intialState ;
     try{
-        state = allTodos || intialState;
+        state = Object.keys(allTodos).length ? allTodos || intialState;
     }catch(e){}    
     let listeners = [];
 

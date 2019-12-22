@@ -4,7 +4,7 @@
   "description": "Todo app in vanillaJS",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha"
   },
   "repository": {
     "type": "git",
@@ -19,5 +19,9 @@
   "bugs": {
     "url": "https://github.com/UthaiahBollera/todoapp/issues"
   },
-  "homepage": "https://github.com/UthaiahBollera/todoapp#readme"
+  "homepage": "https://github.com/UthaiahBollera/todoapp#readme",
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^6.2.2"
+  }
 }

@@ -1,0 +1,23 @@
+{
+  "name": "todoa-vanillajs",
+  "version": "1.0.0",
+  "description": "Todo app in vanillaJS",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/UthaiahBollera/todoapp.git"
+  },
+  "keywords": [
+    "vanillajs",
+    "todo"
+  ],
+  "author": "bollera.sanju@outlook.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/UthaiahBollera/todoapp/issues"
+  },
+  "homepage": "https://github.com/UthaiahBollera/todoapp#readme"
+}
